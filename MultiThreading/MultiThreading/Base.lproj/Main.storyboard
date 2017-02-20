@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--GCDVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="MultiThreading" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GCDVC" customModule="MultiThreading" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,11 +20,26 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sDi-ZU-hff">
+                                <rect key="frame" x="0.0" y="233" width="375" height="300"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sDi-ZU-hff" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0Im-27-XFI"/>
+                            <constraint firstItem="sDi-ZU-hff" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="213" id="73n-9Q-W0x"/>
+                            <constraint firstAttribute="trailing" secondItem="sDi-ZU-hff" secondAttribute="trailing" id="KmG-ho-MmR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sDi-ZU-hff" secondAttribute="bottom" constant="134" id="PQm-fC-xhE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="showImageView" destination="sDi-ZU-hff" id="4wc-fh-L3u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-47.200000000000003" y="-63.418290854572717"/>
         </scene>
     </scenes>
 </document>

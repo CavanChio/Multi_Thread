@@ -14,6 +14,8 @@
 		869B4D911E5AD42700533F4F /* MultiThreadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869B4D901E5AD42700533F4F /* MultiThreadingTests.swift */; };
 		869B4D9C1E5AD42700533F4F /* MultiThreadingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869B4D9B1E5AD42700533F4F /* MultiThreadingUITests.swift */; };
 		869B4DAA1E5AD88B00533F4F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869B4DA91E5AD88B00533F4F /* MainViewController.swift */; };
+		869B4DAC1E5ADDC500533F4F /* OperateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869B4DAB1E5ADDC500533F4F /* OperateVC.swift */; };
+		869B4DAE1E5ADDD900533F4F /* GCDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869B4DAD1E5ADDD900533F4F /* GCDVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		869B4D9B1E5AD42700533F4F /* MultiThreadingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiThreadingUITests.swift; sourceTree = "<group>"; };
 		869B4D9D1E5AD42700533F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		869B4DA91E5AD88B00533F4F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		869B4DAB1E5ADDC500533F4F /* OperateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperateVC.swift; sourceTree = "<group>"; };
+		869B4DAD1E5ADDD900533F4F /* GCDVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				869B4D7B1E5AD42700533F4F /* AppDelegate.swift */,
 				869B4DA91E5AD88B00533F4F /* MainViewController.swift */,
+				869B4DAB1E5ADDC500533F4F /* OperateVC.swift */,
+				869B4DAD1E5ADDD900533F4F /* GCDVC.swift */,
 				869B4D7F1E5AD42700533F4F /* Main.storyboard */,
 				869B4D821E5AD42700533F4F /* Assets.xcassets */,
 				869B4D841E5AD42700533F4F /* LaunchScreen.storyboard */,
@@ -261,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				869B4D7C1E5AD42700533F4F /* AppDelegate.swift in Sources */,
+				869B4DAE1E5ADDD900533F4F /* GCDVC.swift in Sources */,
 				869B4DAA1E5AD88B00533F4F /* MainViewController.swift in Sources */,
+				869B4DAC1E5ADDC500533F4F /* OperateVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

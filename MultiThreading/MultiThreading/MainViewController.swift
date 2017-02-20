@@ -13,9 +13,34 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        self.objectCreate()
+        self.classCreate()
     }
 
+    func objectCreate() {
+        let thread = Thread.init(target: self, selector: #selector(self.objectThread), object: nil)
+        thread.start()
+//        thread.cancel()
+    }
+    
+    func objectThread() {
+        for i in 0..<10000000 {
+            if i == 30 {
+                Thread.exit()
+            }
+            print("****: \(i)")
+            print(Thread.isMainThread)
+        }
+    }
+    
+    func classCreate() {
+        Thread.detachNewThreadSelector(#selector(self.thread2Action), toTarget: self, with: nil)
+    }
+    
+    func thread2Action() {
+        print(Thread.isMainThread)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
